@@ -1,0 +1,6 @@
+vim sudo tmux cmake pkg-config sqlite3 git libglib2.0-dev libgpgme11-dev 
+    libgnutls28-dev uuid-dev libssh-gcrypt-dev libhiredis-dev libsqlite3-dev  
+    libmicrohttpd-dev libxml2-dev doxygen xsltproc xmltoman libical-dev 
+    bison libksba-dev libpcap-dev libgssapi3-heimdal redis-server
+    heimdal-dev apt-transport-https libpopt-dev mingw-w64 gnutls-bin nmap
+    curl gpgv2
