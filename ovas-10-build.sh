@@ -1,4 +1,4 @@
-#!/binbash
+#!/bin/bash
 # The goal of this script is to build, install and setup Openvas 10 on a brand new
 # Debian Stretch build.
 INSTALL_ROOT="/usr/local/"
