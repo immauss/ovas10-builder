@@ -1,7 +1,7 @@
 #!/binbash
 # The goal of this script is to build, install and setup Openvas 10 on a brand new
 # Debian Stretch build.
-
+INSTALL_ROOT="/usr/local/"
 apt update
 apt install $(cat packages)
 
@@ -23,14 +23,6 @@ for repo in $repos; do
 done
 
 
-for dir in $feed_dirs; do 
-	mkdir -p $dir 
-	chgrp feedsync $dir
-	chmod 775 $dir
-done
-
-
-BUILD_DIRS="gvm-libs openvas-scanner gvmd openvas-smb "
 SDIR=$(pwd)
 for dir in $BUILD_DIRS; do 
 	cd $dir 
@@ -51,7 +43,7 @@ done
 feed_dirs="/usr/local/var/lib/openvas/plugins /usr/local/var/lib/openvas/gvm/scapdata /usr/local/var/lib/gvm/cert-data"
 
 for dir in $feed_dirs; do 
-	mkdir $dir
+	mkdir -p $dir
 	chgrp feedsync $dir
 	chmod 775 $dir
 done
